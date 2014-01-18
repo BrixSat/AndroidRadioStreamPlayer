@@ -1,0 +1,3 @@
+# view AndroidManifest.xml #generated:16
+-keep class net.virtual2.player.avefm.V2PlayerMain { <init>(...); }
+

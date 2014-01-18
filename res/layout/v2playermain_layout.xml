@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" android:background="@drawable/avefm">
+
+<LinearLayout
+    android:id="@+id/top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/header" >
+
+    <ImageView
+        android:id="@+id/music_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingRight="20dp"
+        android:src="@drawable/micro"
+        android:contentDescription="@string/micro"/>
+    <TextView
+        android:id="@+id/music_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="David Fonseca - Cry For Love"/>
+</LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom"
+            android:layout_below="@+id/top"
+            android:orientation="vertical">
+
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rssNews"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:drawSelectorOnTop="true"
+                style="@drawable/list_selector_pressed"
+                />
+    </LinearLayout>
+<LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bottombarrss"
+        android:src="@drawable/news" 
+        android:paddingTop="20dp"
+    	android:contentDescription=""/>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bottombarshows"
+        android:src="@drawable/calendar" 
+        android:paddingTop="20dp"
+    android:contentDescription=""/>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bottombarplay"
+        android:src="@drawable/play" 
+        android:paddingTop="20dp"
+    android:contentDescription=""/>
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bottombarmicro"
+        android:src="@drawable/micro" 
+        android:paddingTop="20dp"
+    android:contentDescription=""/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bottombarchat"
+        android:src="@drawable/chat" 
+        android:paddingTop="20dp"
+    android:contentDescription=""/>
+</LinearLayout>
+
+    <ImageButton
+        android:id="@+id/music_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/share"
+        android:background="@drawable/headerbarshare"
+            />
+
+
+</RelativeLayout>
